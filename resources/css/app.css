@@ -1,0 +1,207 @@
+@import '@fontsource-variable/dm-sans';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.choices__list--dropdown, .choices__list{
+    z-index: 9999 !important;
+}
+
+button{
+    svg{
+        display: inline;
+    }
+}
+
+.text-left > *{
+    text-align: left;
+}
+
+.company-card{
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 1rem;
+    }
+}
+
+.tab-links{
+    button, a{
+        &.active{
+            background-color: #fff;
+            color: #ff8800 !important;
+            font-weight: 600;
+
+            svg{
+                stroke-width: 2;
+            }
+        }
+    }
+}
+
+.progress-step{
+    background-color: rgb(225, 225, 225);
+
+    &.active{
+        background-color: rgb(247 147 30);
+    }
+}
+
+.choices__list--dropdown {
+        z-index: 9999 !important;
+}
+
+.choices, .choices__inner{
+    border: none !important;
+}
+
+.choices__input{
+    margin-bottom: 0 !important;
+    padding: 0.5rem !important;
+}
+
+.choices__inner{
+    border-radius: 0 !important;
+    padding: 0 !important;
+    min-height: unset !important;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded]{
+    border: none !important;
+    z-index: 9999 !important;
+}
+
+h1{
+    a{
+        text-decoration: underline;
+    }
+}
+
+.dark{
+    .tab-links{
+        button, a{
+            &.active{
+                background-color: #f7921e27;
+            }
+        }
+    }
+    .progress-step{
+        background-color: rgba(255, 255, 255, 0.152);
+    
+        &.active{
+            background-color: rgb(247 147 30);
+        }
+    }
+
+    /* Dark Mode Styles for Choices.js */
+    .choices {
+        background-color: #1f2937 !important; /* Tailwind 'gray-800' */
+        color: #e5e7eb !important; /* Tailwind 'gray-200' */
+        border-color: #374151 !important; /* Tailwind 'gray-700' */
+        margin-bottom: 1rem; /* Add spacing below the dropdown */
+        
+    }
+
+    .choices__input{
+        background-color: #1f2937;
+    }
+
+    .choices__inner {
+        background-color: #1f2937; /* Tailwind 'gray-800' */
+        color: #e5e7eb; /* Tailwind 'gray-200' */
+        border: 1px solid #374151; /* Tailwind 'gray-700' */
+    }
+
+    .choices__list--dropdown {
+        color: #e5e7eb; /* Tailwind 'gray-200' */
+        border-color: #4b5563; /* Tailwind 'gray-600' */
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 9999 !important;
+    }
+
+    .choices__list--dropdown, .choices__list[aria-expanded]{
+        background-color: #1f2937;
+        z-index: 9999 !important;
+
+    }
+
+    .choices__list--dropdown .choices__item--choice {
+        color: #e5e7eb; /* Tailwind 'gray-200' */
+        background-color: #374151; /* Tailwind 'gray-700' */
+        z-index: 9999 !important;
+
+    }
+
+    .choices__list--dropdown .choices__item--choice:hover,
+    .choices__list--dropdown .choices__item--choice[data-choice-selected] {
+        background-color: #4b5563; /* Tailwind 'gray-600' */
+        color: #ffffff; /* White */
+        z-index: 9999 !important;
+
+    }
+
+    .choices__item--selectable {
+        margin: 0.25rem; /* Add spacing between tags */
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .choices__button {
+        background-color: #813e3e; /* Tailwind 'red-400' */
+        cursor: pointer;
+        width: 20px !important;
+        height: 20px !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 0rem 0 0.5rem!important;
+        border-radius: 9999px !important; /* Fully rounded */
+        line-height: 1; /* Improve button sizing */
+        transition: background-color 0.2s ease;
+    }
+
+    .choices__button:hover {
+        background-color: #ef4444; /* Tailwind 'red-500' */
+    }
+
+    .choices[data-type*=select-one] .choices__input{
+        background-color: #374151;
+        border-color: #374151;
+    }
+
+    .choices__item{
+        background-color: #374151 !important;
+        &:hover{
+            background-color: #1f2937 !important;
+        }
+    }
+
+    .is-focused .choices__inner, .is-open .choices__inner{
+        border-color: #4b5563;
+    }
+}
+
+.choices__list--single{
+    padding: 0 !important;
+    .choices__item{
+        margin: 0 !important;
+        padding: 0.5rem !important;
+        border-radius: unset !important;
+        background-color: transparent !important;
+        z-index: 9999 !important;        
+
+    }
+}
+
+.tox-tinymce{
+    border-radius: 0 !important;
+
+}
+
+.pt-28{
+    padding-top: 7rem;
+}
