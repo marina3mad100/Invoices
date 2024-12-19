@@ -16,10 +16,10 @@
 - Api [Postman Collection](https://github.com/marina3mad100/Invoices/blob/main/invoices.postman_collection.json).
 
 ## Description
-Dependency injection
-design patterns
-solid principles
-make:request for validation
-ability to create new users (admins or employees or clients) and "test@example.com" user is admin
-you can assign any permission you will choose to admin or employee
+- Dependency injection
+- design patterns
+- solid principles
+- make:request for validation
+- ability to create new users (admins or employees or clients) and "test@example.com" user is admin
+- you can assign any permission you will choose to admin or employee
 
