@@ -20,6 +20,6 @@
 - design patterns
 - solid principles
 - make:request for validation
-- ability to create new users (admins or employees or clients) and "test@example.com" user is admin
+- ability to create new users (admins or employees or clients) and "test@example.com" user is admin Oassword is "password"
 - you can assign any permission you will choose to admin or employee
 
